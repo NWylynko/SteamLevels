@@ -3,12 +3,16 @@
 let user;
 let level;
 
+document.getElementById("btn").addEventListener("click", (event) => {
+  event.preventDefault()
+  getData()
+});
+
 async function getData() {
     var user = document.getElementById('user').value;
     var level = document.getElementById('level').value;
     const db_response = await fetch(`/id?user=${user}`);
     const db_data = await db_response.json();
-    window.stop();
 
     // timestamp to date 
     const { timecreated: time = 907794930 } = db_data;
