@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const fetch = require("node-fetch");
-
+require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
@@ -11,9 +11,9 @@ app.listen(port, () => {
 app.use(express.static("public"));
 app.use(cors());
 
-const Steam_API_Key = "XXXXXXXXXXXXXXXXXXXXXXX"; //replace by your API key
+const Steam_API_Key = process.env.Steam_API_Key; // create .env file with Steam_API_Key=XXXXXXXXX in it
 
-if (!Steam_API_Key || Steam_API_Key === "XXXXXXXXXXXXXXXXXXXXXXX") {
+if (!Steam_API_Key) {
   throw new Error('no api key')
 }
 
