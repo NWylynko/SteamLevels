@@ -12,13 +12,13 @@ Steam max level cap is 5099 now so if you enterd more then that in the wanted le
 This application is deployed on Heroku. Please check it out [Here](https://steamlevelcalculator.herokuapp.com/)
 
 
-![demo](/Demo.PNG)
+![demo](/demo.png)
 
 
 
 ### *Technologies & Tools*
 ##### *Front End*
-> Reactjs, jsx, javascript
+> Reactjs, jsx, javascript, styled-components
 ##### *Back End*
 >Node/Express
 ##### *API's Used*
