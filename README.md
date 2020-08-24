@@ -18,10 +18,20 @@ This application is deployed on Heroku. Please check it out [Here](https://steam
 
 ### *Technologies & Tools*
 ##### *Front End*
-> Html/CSS/Javascript
+> Reactjs, jsx, javascript
 ##### *Back End*
 >Node/Express
 ##### *API's Used*
 >Steam API [Documentation](https://partner.steamgames.com/doc/webapi/IPlayerService)
 
 >REST Countries API [Documentation](https://restcountries.eu/)
+
+### to run
+
+1. clone repo
+2. install dependencies of server and client
+`yarn && cd client && yarn && cd ..`
+3. build client
+`yarn build-client`
+4. start server
+`yarn start`
