@@ -33,5 +33,7 @@ This application is deployed on Heroku. Please check it out [Here](https://steam
 `yarn && cd client && yarn && cd ..`
 3. build client
 `yarn build-client`
-4. start server
+4. go to steams [api key page](https://steamcommunity.com/dev/apikey) and register the domain this is going to run on (can just be localhost)
+5. put the generated api key in a .env file in the root of the repo with Steam_API_Key=
+6. start server
 `yarn start`
