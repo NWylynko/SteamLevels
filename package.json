@@ -4,7 +4,8 @@
   "description": "Steam level calculator that tell you how many badge you will need to the next level.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build-client": "cd client && yarn build && mv build ../build && cd .. && rm -rf public && mv build public"
   },
   "keywords": [
     "steam",
@@ -15,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0"
   }
